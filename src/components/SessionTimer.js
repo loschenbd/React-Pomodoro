@@ -3,7 +3,7 @@ import React from 'react';
 const SessionTimer = () => {
   return (
     < div >
-      <p>test</p>
+      <p id="session-label">Session Length</p>
     </div>
 )
   ;

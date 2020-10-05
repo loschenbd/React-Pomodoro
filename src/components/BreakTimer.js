@@ -3,7 +3,7 @@ import React from 'react';
 const BreakTimer = () => {
   return (
     < div >
-      <p>test</p>
+      <p id="break-label">Break Length</p>
     </div>
 )
   ;
