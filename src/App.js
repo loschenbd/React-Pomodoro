@@ -46,6 +46,13 @@ function App() {
   };
   return (
     <div className="App">
+      {/*- Add Timer Display*/}
+      <TimeDisplay
+        sessionLength={sessionLength}
+      />
+      {/*+ change TimeDisplay whenever session length changes (useEffect - called whenever a variable changes)*/}
+      {/*+ Add countdown ( setInterval() )*/}
+      {/*+ Stop Countdown ( clearInterval() ), intervalId -*/}
       { /*- Add Session Timer*/ }
       <SessionTimer
         sessionLength={sessionLength}
@@ -59,11 +66,7 @@ function App() {
         minusMinute={minusBreakMinute}
 
       />
-      {/*- Add Timer Display*/}
-      <TimeDisplay/>
-        {/*+ change TimeDisplay whenever session length changes (useEffect - called whenever a variable changes)*/}
-        {/*+ Add countdown ( setInterval() )*/}
-        {/*+ Stop Countdown ( clearInterval() ), intervalId -*/}
+
       {/*- Add time complete alert  - Add audio alert and play it (useRef)*/}
       {/*- Switch from Session to Break and visa versa (track session type) - set time left to break/session length*/}
       {/*- Add Reset Button*/}
