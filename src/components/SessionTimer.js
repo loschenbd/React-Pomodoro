@@ -2,7 +2,7 @@ import React from 'react';
 import moment from "moment/moment";
 
 const SessionTimer = ({addMinute, minusMinute, sessionLength}) => {
-  const sessionInMinutes = moment.duration(sessionLength, 's').minutes();
+  const sessionInMinutes = moment.duration(sessionLength, 's').asMinutes();
 
   return (
     < div >

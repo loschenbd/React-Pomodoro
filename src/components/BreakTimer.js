@@ -2,7 +2,7 @@ import React from 'react';
 import moment from "moment/moment";
 
 const BreakTimer = ({breakLength, addMinute, minusMinute}) => {
-  const breakInMinutes = moment.duration(breakLength, 's').minutes();
+  const breakInMinutes = moment.duration(breakLength, 's').asMinutes();
 
   return (
     < div >
